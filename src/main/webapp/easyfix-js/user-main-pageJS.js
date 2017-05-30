@@ -165,7 +165,7 @@ function getrevscallback() {
             for (var i = 0; i < reviews.length; i++) {
                 var reviewshell = document.getElementById('review-template').content.cloneNode(true);
                 reviewshell.querySelector('#rev-title').innerText = reviews[i].getElementsByTagName('title')[0].innerHTML;
-                if (localStorage.getItem("sessionId").length > 0) {
+                if (localStorage.getItem("sessionId")!=null && localStorage.getItem("sessionId").length > 0) {
                     reviewshell.querySelector('#rev-title').innerHTML = reviews[i].getElementsByTagName('title')[0].innerHTML + ' | <a data-target="#modal-reply" data-toggle="modal" id="replybtn" onclick="setTarget(' + reviews[i].getElementsByTagName('id')[0].innerHTML + ')"> Reply</a>';
                 } else {
                     reviewshell.querySelector('#rev-title').innerText = reviews[i].getElementsByTagName('title')[0].innerHTML;

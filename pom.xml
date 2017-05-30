@@ -12,7 +12,7 @@
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <tomcatHome>D:\Tomcat\apache-tomcat-8.5.12</tomcatHome>
+        <tomcatHome>D:\Tomcat\apache-tomcat-7.0.77</tomcatHome>
     </properties>
     
     <dependencies>
